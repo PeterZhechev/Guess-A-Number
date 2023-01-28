@@ -14,6 +14,7 @@ function game(input) {
             if (Number(input) <= 100 && Number(input) >= 0) {
                 if (Number(input) === randomizer) {
                     console.log('You guess it!');
+                    return;
                     recursive();
                 } else if (Number(input) < randomizer) {
                     console.log('Too Low!');
@@ -24,6 +25,7 @@ function game(input) {
                         console.log(`You have ${count} more try`);
                     } else if (count === 0) {
                         console.log(`You lost the game!\nGAME OVER`);
+                        return;
                     }
                     recursive();
                 } else if (Number(input) > randomizer) {
@@ -35,6 +37,7 @@ function game(input) {
                         console.log(`You have ${count} more try`);
                     } else if (count === 0) {
                         console.log(`You lost the game!\nGAME OVER`);
+                        return;
                     }
                     recursive();
                 }
