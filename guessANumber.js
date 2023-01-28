@@ -23,7 +23,7 @@ function game(input) {
                     } else if (count === 1) {
                         console.log(`You have ${count} more try`);
                     } else if (count === 0) {
-                        console.log(`You lost the game\nGAME OVER`);
+                        console.log(`You lost the game!\nGAME OVER`);
                     }
                     recursive();
                 } else if (Number(input) > randomizer) {
@@ -34,7 +34,7 @@ function game(input) {
                     } else if (count === 1) {
                         console.log(`You have ${count} more try`);
                     } else if (count === 0) {
-                        console.log(`You lost the game\nGAME OVER`);
+                        console.log(`You lost the game!\nGAME OVER`);
                     }
                     recursive();
                 }
