@@ -49,4 +49,4 @@ function game(input) {
     recursive();
 }
 
-game(35);
+game();
