@@ -15,7 +15,6 @@ function game(input) {
                 if (Number(input) === randomizer) {
                     console.log('You guess it!');
                     return;
-                    recursive();
                 } else if (Number(input) < randomizer) {
                     console.log('Too Low!');
                     count--;
